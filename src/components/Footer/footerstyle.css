@@ -1,0 +1,25 @@
+footer{
+    background-color: blue;
+    color: white;
+    font-size: 19px;
+    height: 100px;
+   
+    
+   
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+footer li{
+    list-style: none;
+    margin-right: 4rem;
+    text-transform: capitalize;
+    
+}
+footer li:hover{
+    color: rgb(114, 151, 194);
+    
+}

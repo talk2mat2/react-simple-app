@@ -1,0 +1,37 @@
+.App-input{
+    background-color: #282c34;
+    display: flex;
+   
+    justify-content: center;
+
+   
+}
+
+.userForm{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    
+}
+.userForm input{
+    width: 30%;
+    margin: 3px;
+color: blue;
+font-size: 13px;
+    padding: 2px;
+   
+    border: 2px solid #dadada;
+    border-radius: 3px;
+}
+.userForm button{
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.userForm input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
