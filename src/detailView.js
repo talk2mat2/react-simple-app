@@ -4,7 +4,7 @@ import "./App.css";
 import { Datacontext } from "./components/Dataprovider";
 
 function DetailView({ match }) {
-  const [state, setState] = useContext(Datacontext);
+  const [state] = useContext(Datacontext);
   const [values, setValues] = useState({loading:true});
   const id = match.params.id;
 

@@ -1,9 +1,15 @@
 import React from 'react';
 import './footerstyle.css'
-const Footer = () => {
+import Updatedfoot from '../../hoc'
+
+const Footer = ({name,id}) => {
+    const{age,position}=id
     return (  <footer>
-        
+       <p>{age}</p>
+       <p>{name}</p>
+       <p>{position}</p>
+      
     </footer>);
 }
  
-export default Footer;
+export default Updatedfoot(Footer);

@@ -7,9 +7,9 @@ const Adduser = () => {
     const[keyinput,setKeyinput]=useState({name:"",age:"",phone:""})
 const [state,setState]=useContext(Datacontext)
 
-    const handleChange=(e)=>{
+    const handleChange=({target})=>{
         
-        setKeyinput({...keyinput,[e.target.name]:e.target.value})
+        setKeyinput({...keyinput,[target.name]:target.value})
 
     }
     const handleSubmit=(e)=>{

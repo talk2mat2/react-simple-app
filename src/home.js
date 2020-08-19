@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./App.css";
 import { Datacontext } from "./components/Dataprovider";
 import { Link } from "react-router-dom";
+import StripeCheckoutButton from './components/stripButon/strip-buttton.componens'
 
 
 function Home() {
@@ -61,6 +62,7 @@ function Home() {
     <div className="">
       <header className="App-header">
         <div>{listUsers(state)}</div>
+        <StripeCheckoutButton price={state.users.length} />
       </header>
     </div>
   );

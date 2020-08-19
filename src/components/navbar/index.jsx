@@ -1,19 +1,23 @@
-import React, { useContext } from "react";
+import React ,{useEffect} from "react";
 import "./navbarstyle.css";
 import { Link } from "react-router-dom";
-import { Datacontext } from "../Dataprovider";
 
-const Nav = () => {
-  const [state] = useContext(Datacontext);
+
+
+const Nav = (props) => {
+ useEffect(()=>{
+console.log("nave redndere")
+ })
+
   return (
     <nav>
-      <ul>
-        <li><button>likes</button></li>
+      <ul><Link to="/likes">
+        <li><button>likes</button></li></Link>
         <Link to="/">
           <li><button>home</button></li>
         </Link>
         <Link to="/users">
-        <li><button>No.of users-({state.users.length})</button></li> </Link>
+        <li><button>No.of users-({props.users.length})</button></li> </Link>
       </ul>
     </nav>
   );
