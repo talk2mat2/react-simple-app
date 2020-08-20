@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 
 const Nav = (props) => {
- useEffect(()=>{
-console.log("nave redndere")
- })
+//  useEffect(()=>{
+// c
+//  })
 
   return (
     <nav>
